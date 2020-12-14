@@ -37,6 +37,13 @@ message = Mail(
     subject = 'Scratch org created',
     html_content = content)
 
+print('Information')
+print(displayUserJson)
+print(displayUrlJson)
+print(sendgridApiKey)
+print(fromEmail)
+print(toEmail)
+
 try:
     sg = SendGridAPIClient(sendgridApiKey)
     response = sg.send(message)
