@@ -1,0 +1,28 @@
+name: 'Project Card Move Checker 2'
+description: 'Checks if a project card has been move from the expected source column to the expected destination column; case-insensitive'
+author: 'Leon Kempers'
+
+inputs:
+  token:
+    description: 'GitHub token'
+    required: true
+  fromColumnId:
+    description: 'The ID of the source column'
+    required: true
+  fromColumnName:
+    description: 'The expected name of the source column'
+    required: true
+  toColumnId:
+    description: 'The ID of the destination column'
+    required: true
+  toColumnName:
+    description: 'The expected name of the destination column'
+    required: true
+
+outputs:
+  isMatch:
+    description: 'Indicates whether the column was moved as expected'
+
+runs:
+  using: docker
+  image: 'Dockerfile'

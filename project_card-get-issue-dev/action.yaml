@@ -1,0 +1,16 @@
+name: Get issue developer
+description: This action extracts the developer's email address from a project card
+author: Leon Kempers
+
+inputs:
+  issueNote:
+    required: true
+    description: ID of the issue
+
+outputs:
+  developer:
+    description: Email address of the developer
+
+runs:
+  using: docker
+  image: 'Dockerfile'
