@@ -1,7 +1,7 @@
 import os
 import re
 
-issueNote = os.environ['INPUT_ISSUENOTE']
+cardNote = os.environ['INPUT_CARDNOTE']
 issueUrl = os.environ['INPUT_ISSUEURL']
 
 print('Issue URL')
