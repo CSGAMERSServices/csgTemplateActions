@@ -3,18 +3,21 @@ description: Sends an email with the credentials of the newly created scratch or
 author: Leon Kempers
 
 inputs:
-  display_user_json:
+  displayUserJson:
     required: true
     description: JSON object representing the display user
-  display_url_json:
+  displayUrlJson:
     required: true
     description: JSON object representing the display URL
-  sendgrid_api_key:
+  sendgridApiKey:
     required: true
     description: Sendgrid API key
-  send_from_email:
+  fromEmail:
     required: true
     description: Address the email should be sent from
+  toEmail:
+    required: true
+    description: Address the email should be sent to
 
 runs:
   using: docker
