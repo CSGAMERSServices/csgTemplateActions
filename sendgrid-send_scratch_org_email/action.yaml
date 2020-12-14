@@ -1,0 +1,21 @@
+name: Send scratch org email
+description: Sends an email with the credentials of the newly created scratch org
+author: Leon Kempers
+
+inputs:
+  display_user_json:
+    required: true
+    description: JSON object representing the display user
+  display_url_json:
+    required: true
+    description: JSON object representing the display URL
+  sendgrid_api_key:
+    required: true
+    description: Sendgrid API key
+  send_from_email:
+    required: true
+    description: Address the email should be sent from
+
+runs:
+  using: docker
+  image: 'Dockerfile'
