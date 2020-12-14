@@ -29,7 +29,7 @@ Login URL: {loginurl}
            orgId = displayUserJson['result']['orgId'],
            username = displayUserJson['result']['username'],
            instanceUrl = displayUserJson['result']['instanceUrl'],
-           loginurl = displayUserJson['result']['loginurl'])
+           loginurl = displayUserJson['result']['loginUrl'])
 
 message = Mail(
     from_email = fromEmail,
