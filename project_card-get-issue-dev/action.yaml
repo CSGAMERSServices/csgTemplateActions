@@ -5,7 +5,7 @@ author: Leon Kempers
 inputs:
   issueNote:
     required: true
-    description: ID of the issue
+    description: Note on the project card
 
 outputs:
   developer:

@@ -1,0 +1,20 @@
+name: 'Update credentials file'
+description: 'Updates the credentials file in the repo'
+author: 'Leon Kempers'
+
+inputs:
+  token:
+    description: 'GitHub token'
+    required: true
+  projectCardId:
+    required: true
+    description: ID of the project card
+  displayUserJson:
+    required: true
+    description: JSON object representing the display user
+  displayUrlJson:
+    required: true
+
+runs:
+  using: docker
+  image: 'Dockerfile'
