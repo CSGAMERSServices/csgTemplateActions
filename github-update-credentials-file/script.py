@@ -13,7 +13,7 @@ displayUrlJson = json.loads(os.environ['INPUT_DISPLAYURLJSON'])
 g = github.Github(token)
 
 # Get credentials file from repo
-repo = g.get_user().get_repo('csgTemplate')
+repo = g.get_user().get_repo(repoName)
 file = repo.get_file_contents('credentials.txt')
 
 # Update file with new credentials
