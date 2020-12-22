@@ -8,8 +8,8 @@ print('Issue URL')
 print(issueUrl)
 
 # Extract all email addresses from the Issue Note, store the last one
-emailAddresses = re.findall(r'[\w\.-]+@[\w\.-]+', issueNote)
-developer = emailAddresses[-1]
+#emailAddresses = re.findall(r'[\w\.-]+@[\w\.-]+', cardNote)
+#developer = emailAddresses[-1]
 
 # Print developer as output
 print(f"::set-output name=developer::{developer}")
