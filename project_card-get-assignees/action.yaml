@@ -1,5 +1,5 @@
 name: Get issue developer
-description: This action extracts the developer's email address from a project card
+description: Extracts the assigned users' email addresses from the project card or issue
 author: Leon Kempers
 
 inputs:
@@ -15,7 +15,7 @@ inputs:
 
 outputs:
   developer:
-    description: Email address of the developer
+    description: Comma-separated list of email addresses of the assigned users
 
 runs:
   using: docker

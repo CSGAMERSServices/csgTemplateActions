@@ -9,7 +9,7 @@ displayUserJson = json.loads(os.environ['INPUT_DISPLAYUSERJSON'])
 displayUrlJson = json.loads(os.environ['INPUT_DISPLAYURLJSON'])
 sendgridApiKey = os.environ['INPUT_SENDGRIDAPIKEY']
 fromEmail = os.environ['INPUT_FROMEMAIL']
-toEmail = os.environ['INPUT_TOEMAIL']
+toEmails = os.environ['INPUT_TOEMAILS']
 
 content = '''Your scratch org is now ready!
 
@@ -33,7 +33,7 @@ Login URL: {loginurl}
 
 message = Mail(
     from_email = fromEmail,
-    to_emails = toEmail,
+    to_emails = toEmails.split(','),
     subject = 'Scratch org created',
     html_content = content)
 

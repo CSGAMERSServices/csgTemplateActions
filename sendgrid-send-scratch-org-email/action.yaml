@@ -4,20 +4,20 @@ author: Leon Kempers
 
 inputs:
   displayUserJson:
-    required: true
     description: JSON object representing the display user
+    required: true
   displayUrlJson:
-    required: true
     description: JSON object representing the display URL
+    required: true
   sendgridApiKey:
-    required: true
     description: Sendgrid API key
+    required: true
   fromEmail:
-    required: true
     description: Address the email should be sent from
-  toEmail:
     required: true
-    description: Address the email should be sent to
+  toEmails:
+    description: Addresses the email should be sent to
+    required: true
 
 runs:
   using: docker
