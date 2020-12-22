@@ -3,12 +3,15 @@ description: This action extracts the developer's email address from a project c
 author: Leon Kempers
 
 inputs:
+  token:
+    description: GitHub token
+    required: true
   cardNote:
-    required: true
     description: Note on the project card
-  issueUrl:
     required: true
+  issueUrl:
     description: URL of the issue associated with the project card
+    required: true
 
 outputs:
   developer:

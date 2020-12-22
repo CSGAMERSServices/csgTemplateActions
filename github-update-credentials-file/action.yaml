@@ -4,7 +4,7 @@ author: 'Leon Kempers'
 
 inputs:
   token:
-    description: 'GitHub token'
+    description: GitHub token
     required: true
   projectCardId:
     required: true
