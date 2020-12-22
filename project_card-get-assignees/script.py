@@ -1,3 +1,4 @@
+import github
 import os
 import re
 
@@ -10,6 +11,9 @@ issueUrl = os.environ['INPUT_ISSUEURL']
 if (issueUrl != None and len(issueUrl) > 0):
     # Get issue number from content URL
     issueNo = int(issueUrl.rsplit('/', 1)[-1])
+
+    # Connect to GitHub
+    g = github.Github(token)
 
     # Query issue information
     repo = g.get_repo('CSGAMERSServices/csgTemplate')
