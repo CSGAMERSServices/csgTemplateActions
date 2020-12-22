@@ -3,9 +3,12 @@ description: This action extracts the developer's email address from a project c
 author: Leon Kempers
 
 inputs:
-  issueNote:
+  cardNote:
     required: true
     description: Note on the project card
+  issueUrl:
+    required: true
+    description: URL of the issue associated with the project card
 
 outputs:
   developer:
