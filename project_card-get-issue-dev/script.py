@@ -1,7 +1,11 @@
 import os
 import re
 
-issueNote = os.environ['INPUT_ISSUENOTE']
+cardNote = os.environ['INPUT_CARDNOTE']
+issueUrl = os.environ['INPUT_ISSUEURL']
+
+print('Issue URL')
+print(issueUrl)
 
 # Extract all email addresses from the Issue Note, store the last one
 emailAddresses = re.findall(r'[\w\.-]+@[\w\.-]+', issueNote)
